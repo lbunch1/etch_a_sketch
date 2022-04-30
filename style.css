@@ -24,12 +24,14 @@ body {
 
 .grid-size-in {
     padding:10px;
+    width:90px;
     box-sizing:border-box;
     background-color:lightgrey;
     color:rgb(35, 35, 35);
     border:none;
     border-radius:5px;
     font-size:large;
+    text-align:center;
 }
 
 .grid-size-btn {
