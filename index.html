@@ -12,6 +12,7 @@
     <div class="header">
         <!-- <div class="header_item"><h1>Etch-a-Sketch</h1></div> -->
         <div class="header_item">
+            <div class="active-color"></div>
             <form>
                 <input placeholder="0-100" type="number" maxlength="3" id="grid_size_in" class="grid-size-in"><button class="grid-size-btn" type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
             </form>    
@@ -19,7 +20,7 @@
     </div>
     <div class="center">
         <div class="side-panel">
-            <button type="button" class="c_selector " onclick="setColor('red')" style="background-color:red"></button>
+            <button type="button" class="c_selector " onclick="setColor('red')" style="background-color:red" href="#"></button>
             <button type="button" class="c_selector " onclick="setColor('orange')" style="background-color:orange"></button>
             <button type="button" class="c_selector " onclick="setColor('yellow')" style="background-color:yellow"></button>
             <button type="button" class="c_selector " onclick="setColor('green')" style="background-color:green"></button>

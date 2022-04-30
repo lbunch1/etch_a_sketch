@@ -18,6 +18,7 @@ const stopDraw = function() {
     })
 }
 
+let colorIndicator = document.querySelector(".active-color")
 
 //function to change div background color on mouseover
 
@@ -80,4 +81,5 @@ input.addEventListener("keypress",function(event) {
 
 const setColor = function(color) {
     activeColor = color;
+    colorIndicator.style.backgroundColor = activeColor;
 }
