@@ -8,27 +8,41 @@
     <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
-<body>
+<body ondragstart="return false;" ondrop="return false;">
     <div class="header">
-        <div class="header_item"><h1>Etch-a-Sketch</h1></div>
+        <!-- <div class="header_item"><h1>Etch-a-Sketch</h1></div> -->
         <div class="header_item">
             <form>
-                <input placeholder="0-100" type="number" maxlength="3" id="grid_size_in"><button type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
+                <input placeholder="0-100" type="number" maxlength="3" id="grid_size_in" class="grid-size-in"><button class="grid-size-btn" type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
             </form>    
         </div>
     </div>
     <div class="center">
         <div class="side-panel">
             <button type="button" class="c_selector " onclick="setColor('red')" style="background-color:red"></button>
-            <button type="button" class="c_selector " onclick="setColor('blue')" style="background-color:blue"></button>
+            <button type="button" class="c_selector " onclick="setColor('orange')" style="background-color:orange"></button>
             <button type="button" class="c_selector " onclick="setColor('yellow')" style="background-color:yellow"></button>
             <button type="button" class="c_selector " onclick="setColor('green')" style="background-color:green"></button>
-            <button type="button" class="c_selector " onclick="setColor('purple')" style="background-color:purple"></button>
-            <button type="button" class="c_selector " onclick="setColor('brown')" style="background-color:brown"></button>
+            <button type="button" class="c_selector " onclick="setColor('teal')" style="background-color:teal"></button>
+            <button type="button" class="c_selector " onclick="setColor('blue')" style="background-color:blue"></button>
+            <button type="button" class="c_selector " onclick="setColor('blueviolet')" style="background-color:blueviolet"></button>
+            <button type="button" class="c_selector " onclick="setColor('hotpink')" style="background-color:hotpink"></button>
             <button type="button" class="c_selector " onclick="setColor('white')" style="background-color:white"></button>
-
+            <button type="button" class="c_selector " onclick="setColor('black')" style="background-color:black"></button>
         </div>
         <div class="container"></div>
+        <div class="side-panel">
+            <button type="button" class="c_selector " onclick="setColor('brown')" style="background-color:brown"></button>
+            <button type="button" class="c_selector " onclick="setColor('saddlebrown')" style="background-color:saddlebrown"></button>
+            <button type="button" class="c_selector " onclick="setColor('tan')" style="background-color:tan"></button>
+            <button type="button" class="c_selector " onclick="setColor('darkgrey')" style="background-color:darkgrey"></button>
+            <button type="button" class="c_selector " onclick="setColor('lightgrey')" style="background-color:lightgrey"></button>
+            <button type="button" class="c_selector " onclick="setColor('cyan')" style="background-color:cyan"></button>
+            <button type="button" class="c_selector " onclick="setColor('magenta')" style="background-color:magenta"></button>
+            <button type="button" class="c_selector " onclick="setColor('lime')" style="background-color:lime"></button>
+            <button type="button" class="c_selector " onclick="setColor('darkgreen')" style="background-color:darkgreen"></button>
+            <button type="button" class="c_selector " onclick="setColor('darkolivegreen')" style="background-color:darkolivegreen"></button>
+        </div>
     </div>
 </body>
 </html>
