@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
 </head>
 <body>
@@ -13,11 +13,21 @@
         <div class="header_item"><h1>Etch-a-Sketch</h1></div>
         <div class="header_item">
             <form>
-                <input placeholder="0-100" width="10px" type="number" maxlength="3" id="grid_size_in"><button onclick="" id="grid_size_btn">Generate</button>
+                <input placeholder="0-100" type="number" maxlength="3" id="grid_size_in"><button type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
             </form>    
         </div>
     </div>
     <div class="center">
+        <div class="side-panel">
+            <button type="button" class="c_selector " onclick="setColor('red')" style="background-color:red"></button>
+            <button type="button" class="c_selector " onclick="setColor('blue')" style="background-color:blue"></button>
+            <button type="button" class="c_selector " onclick="setColor('yellow')" style="background-color:yellow"></button>
+            <button type="button" class="c_selector " onclick="setColor('green')" style="background-color:green"></button>
+            <button type="button" class="c_selector " onclick="setColor('purple')" style="background-color:purple"></button>
+            <button type="button" class="c_selector " onclick="setColor('brown')" style="background-color:brown"></button>
+            <button type="button" class="c_selector " onclick="setColor('white')" style="background-color:white"></button>
+
+        </div>
         <div class="container"></div>
     </div>
 </body>

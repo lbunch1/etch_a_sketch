@@ -23,9 +23,39 @@ body {
 }
 
 .container {
+    display:flex;
+    flex-direction: column;
     height: 600px;
     width: 600px;
     padding: 0;
     margin: 0;
     border:rgb(146, 145, 145) solid 5px;
+}
+
+.grid-column {
+    display:flex;
+    flex-direction: row;
+    flex-grow:1;
+    overflow:auto;
+}
+
+.grid-item {
+    display:flex;
+    flex-grow:1;
+    width:fit-content;
+    max-height:fit-content;
+    background-color:ghostwhite;
+    border: rgb(35, 35, 35) solid 1px;
+}
+
+.side-panel {
+    display:flex;
+    flex-direction: column;
+}
+
+.c_selector {
+    width:60px;
+    height:60px;
+    text-decoration: none;
+    outline: none;
 }
