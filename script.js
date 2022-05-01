@@ -71,6 +71,12 @@ const genGrid = function() {
     }
 }
 
+const resetGrid = function() {
+    container.innerHTML = "";
+    createGrid(gridSize);
+    listener();
+}
+
 const input = document.getElementById("grid_size_in");
 input.addEventListener("keypress",function(event) {
     if (event.key === "Enter") {

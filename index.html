@@ -14,7 +14,9 @@
         <div class="header_item">
             <div class="active-color"></div>
             <form>
-                <input placeholder="0-100" type="number" maxlength="3" id="grid_size_in" class="grid-size-in"><button class="grid-size-btn" type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
+                <input placeholder="0-100" value="16" type="number" maxlength="3" id="grid_size_in" class="grid-size-in">
+                <button class="grid-size-btn" type="button" onclick="genGrid()" id="grid_size_btn">Generate</button>
+                <button class="grid-size-btn" type="button" onclick="resetGrid()">Reset</button>
             </form>    
         </div>
     </div>
@@ -28,7 +30,7 @@
             <button type="button" class="c_selector " onclick="setColor('blue')" style="background-color:blue"></button>
             <button type="button" class="c_selector " onclick="setColor('blueviolet')" style="background-color:blueviolet"></button>
             <button type="button" class="c_selector " onclick="setColor('hotpink')" style="background-color:hotpink"></button>
-            <button type="button" class="c_selector " onclick="setColor('white')" style="background-color:white"></button>
+            <button type="button" class="c_selector " onclick="setColor('ghostwhite')" style="background-color:ghostwhite"></button>
             <button type="button" class="c_selector " onclick="setColor('black')" style="background-color:black"></button>
         </div>
         <div class="container"></div>
